@@ -1,0 +1,151 @@
+/* LIGHT MODE STYLES */
+:root {
+     --primary-color: #6449e7;
+
+     --primary-bg-color: #18182f;
+     --secondary-bg-color: #121231;
+     
+     --primary-text-color: #ffffff;
+     --secondary-text-color: #96a0a6;
+     
+     --primary-box-shadow: -3px -3px 8px rgb(34 34 53 / 95%), 3px 3px 8px rgb(12 11 14 / 82%);
+     --secondary-box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 10px rgb(0 0 0 / 30%);
+     --icon-box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 10px rgb(0 0 0 / 30%);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+body {
+     /* cursor: none; */
+     transition: all .5s ease-in-out;
+     color: var(--primary-text-color);
+     font-family: 'Poppins', sans-serif;
+}
+
+
+/* DARK MODE STYLES */
+body.light-mode {
+     --primary-color: #0D7AB9;
+     
+     --primary-bg-color: #f9f9f9;
+     --secondary-bg-color: #ffffff;
+
+     --primary-text-color: #464633;
+     --secondary-text-color: #96a0a6;
+     
+     --primary-box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+     --secondary-box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 10px rgb(0 0 0 / 30%);
+     --icon-box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
+}
+
+.container {
+     width: 100%;
+     margin: auto;
+     max-width: 1000px;
+}
+
+
+/* SECTION HEADER */
+.section-header {
+     width: 80%;
+     padding: 0 5%;
+     margin: 0 auto;
+     max-width: 900px;
+     text-align: center;
+}
+
+.section-header h3 {
+     font-size: 30px;
+     margin-bottom: 20px;
+     text-transform: capitalize;
+}
+
+.cursive {
+     color: var(--primary-color);
+     font-family: 'Dancing Script', cursive;
+}
+
+p {
+     color: var(--secondary-text-color);
+}
+
+.btn {
+     border: none;
+     display: flex;
+     cursor: pointer;
+     font-weight: 600;
+     background: none;
+     margin-left: auto;
+     padding: 15px 20px;
+     border-radius: 5px;
+     letter-spacing: 2px;
+     align-items: center;
+     text-transform: uppercase;
+     color: var(--primary-color);
+     transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+     color: var(--primary-bg-color);
+     background: var(--primary-color);
+}
+
+.btn:hover .arrow {
+     color: var(--primary-bg-color);
+}
+
+.btn .arrow {
+     height: 20px;
+     color: var(--primary-color);
+     margin-left: 10px;
+}
+
+.btn.primary {
+     color: var(--primary-bg-color);
+     background: var(--primary-color);
+}
+
+
+/* ON HOVER OF BUTTON, MAKE THE ARROW INSIDE TURN WHITE */
+.btn.primary:hover {
+     background: transparent;
+     color: var(--primary-color);
+}
+
+.btn.secondary {
+	color: var(--primary-color);
+	background: var(--primary-bg-color);
+	border: 2px solid var(--primary-color);
+}
+.btn.secondary:hover {
+	color: var(--primary-bg-color);
+	background: var(--primary-color);
+	border: 2px solid var(--primary-bg-color);
+}
+
+
+ul { 
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+}
+
+img:hover {
+     transform: scale(1.1);
+}
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+     .section-header {
+          width: 100%;
+     }
+
+}

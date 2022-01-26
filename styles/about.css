@@ -1,0 +1,149 @@
+#about-section {
+     padding: 5% 10%;
+     background: var(--secondary-bg-color);
+}
+
+
+/* ABOUT CONTAINER */
+#about-section .about-container {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+
+
+/* IMAGE CONTAINER */
+#about-section .about-container .img-container {
+     width: 40%;
+     padding: 25px;
+     height: 750px;
+     margin-right: 5%;
+     border-radius: 5px;
+     background: var(--secondary-bg-color);
+     box-shadow: var(--secondary-box-shadow);
+}
+
+#about-section .about-container img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 5px;
+}
+
+#about-section .about-container img:hover {
+     transform: scale(1);
+}
+
+
+/* ABOUT DETAILS */
+#about-section .about-container .about-details {
+     width: 50%;
+}
+
+
+#about-section .about-container .about-details h3 {
+     font-size: 20px;     
+     color: var(--primary-text-color);
+     margin-bottom: 30px;
+}
+
+#about-section .about-container .about-details h2 {
+     font-size: 50px;
+     margin-bottom: 10px;
+}
+
+#about-section .about-container .about-details p {
+     font-size: 18px;
+     margin-bottom: 30px;
+}
+
+
+/* DETAILS CONTAINER */
+#about-section .about-container .about-details .details-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}    
+
+
+/* INDIVIDUAL DETAIL */
+#about-section .about-container .about-details .details-container .detail {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;     
+     justify-content: flex-start;
+}
+
+#about-section .about-container .about-details .details-container .detail p {
+     font-size: 17px;
+     margin-bottom: 0;
+     position: relative;
+     padding-left: 25px;
+}
+
+#about-section .about-container .about-details .details-container .detail p span,
+#about-section .about-container .about-details .details-container .detail p a {
+     font-size: 14px;
+     font-weight: 400;
+}
+
+#about-section .about-container .about-details .details-container .detail p::before {
+     left: 0;
+     top: 50%;
+     width: 20px;
+     height: 2px;
+     content: '';
+     position: absolute;
+     background: var(--secondary-text-color);
+     transform: translateY(-50%);
+}
+
+#about-section .about-container .about-details .details-container .detail p a {
+     color: var(--secondary-text-color);
+}
+
+
+/* ABOUT DETAILS BUTTON */
+#about-section .about-container .about-details .btn {
+     font-size: 24px;
+     margin: 20px auto 0 0;
+}
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 700PX AND UPWARDS*/
+@media screen and (min-width: 700px) {
+     #about-section .about-container .about-details .details-container {
+          flex-direction: row;
+          align-items: flex-start;
+     }    
+}
+
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 1200PX*/
+@media screen and (max-width: 1200px) {
+     #about-section { 
+          padding: 10%;
+     }
+
+     #about-section .about-container {
+          flex-direction: column;
+     }
+
+     #about-section .about-container .img-container  {
+          width: 100%;
+          height: 500px;
+          margin-bottom: 50px;
+     }
+
+     #about-section .about-container .about-details {
+          width: 100%;
+     }
+     
+     #about-section .about-container .about-details .details-container {
+          flex-direction: column;
+          align-items: flex-start;
+     }    
+}
+
+

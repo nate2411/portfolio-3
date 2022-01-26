@@ -1,0 +1,104 @@
+#gallery-section {
+     padding: 5% 10%;
+     background: var(--primary-bg-color);
+}
+
+#gallery-section .section-header .cursive {
+     font-size: 50px;
+}
+
+#gallery-section .filter-container {
+	display: flex;
+	margin-bottom: 50px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#gallery-section .filter-container .btn {
+	margin: 0 20px 0 0;
+}
+
+#gallery-section .gallery-container .projects-container {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+}
+
+.gallery-container .projects-container .project {
+     width: 45%;
+     padding: 10px;
+     max-width: 500px;
+     border-radius: 10px;
+     transition: all .5 ease-in-out;
+     box-shadow: var(--primary-box-shadow);
+}
+
+.gallery-container .project.margin-down {
+     margin-top: 150px;
+}
+
+.gallery-container .project .img-container {
+     width: 100%;
+     overflow: hidden;
+     border-radius: 10px;
+     margin-bottom: 15px;
+}
+
+.gallery-container .project img {
+     width: 100%;
+     border-radius: 10px;
+     transition: all .5s ease-in-out;
+}
+
+.gallery-container .project h2 {
+     font-size: 30px;
+     font-weight: 700;
+     margin-bottom: 15px;
+     text-transform: capitalize;
+}
+
+.gallery-container .btns-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.gallery-container .btns-container .btn {
+     margin: 20px 0;
+     font-size: 15x;
+     font-weight: 500;
+     border: 2px solid var(--primary-color);
+     transition: all .5s ease-in-out;
+}
+
+.gallery-container .btns-container .btn.primary {
+     color: var(--primary-bg-color);
+     background: var(--primary-color);
+}
+
+.gallery-container .btns-container .btn.primary:hover {
+     color: var(--primary-color);
+     background: transparent;
+}
+
+.gallery-container .btn-container {
+     margin-top: 50px;
+}
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 1100PX*/
+@media screen and (max-width: 1100px) {
+     #gallery-section { 
+          padding: 10%;
+     }
+
+     #gallery-section .gallery-container .projects-container {
+          flex-direction: column;
+     }
+
+     .gallery-container .projects-container .project {
+          width: 100%;
+          margin: 20px auto;
+     }
+     
+}
